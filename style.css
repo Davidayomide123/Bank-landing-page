@@ -14,10 +14,6 @@ nav{
     background-color: white;
 }
 
-.hamburger-menu {
-    display: none;
-}
-
 ul{
     display: flex;
 }
@@ -39,6 +35,10 @@ nav button{
     border-radius: 20px;
     background-color: hsl(233, 26%, 24%);
     color: white;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 main{
@@ -201,37 +201,40 @@ footer{
     color: white;
 }
 
-
+/* =========================================
+   MEDIA QUERY FOR PHONES AND TABLETS
+   (Screens 768px and smaller)
+   ========================================= */
 
 @media screen and (max-width: 1024px) {
     
     /* 1. STOP THE PAGE FROM SCROLLING SIDEWAYS */
     html, body {
-        overflow-x: hidden ;
-        width: 100% ;
-        margin: 0 ;
-        padding: 0 ;
+        overflow-x: hidden !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     /* 2. NAVIGATION */
     nav {
-        justify-content: space-between ;
-        padding: 20px ;
+        justify-content: space-between !important;
+        padding: 20px !important;
     }
 
     nav ul, nav button {
-        display: none ; /* Hide desktop links and button */
+        display: none !important; /* Hide desktop links and button */
     }
 
     .hamburger-menu {
-        display: block ;
+        display: block !important;
         width: 24px;
         cursor: pointer;
     }
 
     /* 3. HERO SECTION */
     main {
-        height: auto ;
+        height: auto !important;
         display: flex;
         flex-direction: column-reverse; /* Puts image on top, text on bottom */
         align-items: center;
@@ -241,98 +244,98 @@ footer{
     /* THIS IS THE FIX FOR THE EMPTY SPACE */
     .body-images {
         position: relative;
-        width: 100% ;
+        width: 100% !important;
         height: 350px;
-        overflow: hidden ; /* Cuts off image spillover */
-        margin: 0 ;
-        padding: 0 ;
+        overflow: hidden !important; /* Cuts off image spillover */
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .image1 {
-        width: 200% ;
-        height: auto ;
+        width: 200% !important;
+        height: auto !important;
         position: absolute;
-        top: -50px ;
-        left: 50% ;
-        transform: translateX(-50%) ;
-        margin: 0 ; /* Removes the 650px margin */
+        top: -50px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important; /* Removes the 650px margin */
     }
 
     .image2 {
-        width: 80% ;
+        width: 80% !important;
         position: absolute;
-        top: 0 ;
-        left: 50% ;
-        transform: translateX(-50%) ;
-        margin: 0 ; /* Removes the 785px margin */
+        top: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important; /* Removes the 785px margin */
     }
 
     .body-text {
-        margin-left: 0 ;
-        margin-top: 30px ;
-        width: 100% ;
-        padding: 0 20px ;
-        box-sizing: border-box ;
+        margin-left: 0 !important;
+        margin-top: 30px !important;
+        width: 100% !important;
+        padding: 0 20px !important;
+        box-sizing: border-box !important;
         text-align: center;
     }
 
     .body-text h1 {
-        font-size: 35px ;
+        font-size: 35px !important;
     }
 
     /* 4. "WHY CHOOSE" SECTION */
     .section-one {
-        padding: 50px 20px ;
+        padding: 50px 20px !important;
         text-align: center;
     }
 
     .body2-first {
-        margin-left: 0 ;
-        width: 100% ;
+        margin-left: 0 !important;
+        width: 100% !important;
     }
 
     .body2-first h1 {
-        font-size: 30px ;
+        font-size: 30px !important;
     }
 
     .body2-second {
-        flex-direction: column ;
-        margin: 40px 0 ;
+        flex-direction: column !important;
+        margin: 40px 0 !important;
     }
 
     .first-card-set {
-        width: 100% ;
+        width: 100% !important;
         max-width: 350px;
-        padding: 20px 0 ;
+        padding: 20px 0 !important;
         text-align: center;
     }
 
     /* 5. LATEST ARTICLES */
     .section-two {
-        padding: 50px 20px ;
+        padding: 50px 20px !important;
     }
 
     .s2-h1 {
-        margin-left: 0 ;
-        width: 100% ;
+        margin-left: 0 !important;
+        width: 100% !important;
         text-align: center;
     }
 
     .s2-h1 h1 {
-        font-size: 30px ;
+        font-size: 30px !important;
     }
 
     .s2-cards {
-        flex-direction: column ;
+        flex-direction: column !important;
         align-items: center;
         margin-top: 30px;
     }
 
     .s2-card {
-        width: 100% ;
+        width: 100% !important;
         max-width: 350px;
-        height: auto ;
-        margin: 15px 0 ;
+        height: auto !important;
+        margin: 15px 0 !important;
     }
 
     .s2-card img {
@@ -342,15 +345,15 @@ footer{
 
     /* 6. FOOTER */
     footer {
-        height: auto ;
-        padding: 40px 20px ;
-        margin-top: 50px ;
+        height: auto !important;
+        padding: 40px 20px !important;
+        margin-top: 50px !important;
     }
 
     .footer {
-        flex-direction: column ;
-        padding: 0 ;
-        gap: 30px ;
+        flex-direction: column !important;
+        padding: 0 !important;
+        gap: 30px !important;
         text-align: center;
     }
 
@@ -361,17 +364,17 @@ footer{
     }
 
     .icons img {
-        margin-left: 0 ;
+        margin-left: 0 !important;
     }
 
     .footer ul {
-        flex-direction: column ;
-        gap: 15px ;
-        padding: 0 ;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 0 !important;
     }
 
     .footer ul li a {
-        margin-right: 0 ;
+        margin-right: 0 !important;
     }
 
     .button {
@@ -380,8 +383,7 @@ footer{
     }
 
     .button button {
-        width: 100% ;
+        width: 100% !important;
         max-width: 250px;
     }
 }
-
