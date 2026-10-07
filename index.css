@@ -44,6 +44,10 @@ nav button{
     display: none;
 }
 
+.signup {
+    text-decoration: none;
+}
+
 main{
     height: 67vh;
 }
